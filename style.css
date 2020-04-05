@@ -1,50 +1,110 @@
-@import url('https://fonts.google.com/specimen/Open+Sans');
-@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body{
-    font-family:'Open Sans', sans-serif;
-    font-size: 14px;
     max-width: 1440px;
     margin: 0;
     color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
 }
-nav .nav{
+header{
+    background: hsl(217, 28%, 15%);
+    display: flex;
+    border: 1px solid greenyellow;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    border: 1px solid yellow;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 1px solid salmon;
+}
+ul .nav{
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.navbar .nav li{
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    display: flex;
-}
-nav ul{
-    display: flex;
-}
-nav li{
-    margin: 0 10px;
+    justify-content: flex-end;
     list-style-type: none;
-    font-family: 'Raleway',sans-serif;
+    margin: 0 20px;
 }
+
 .logo-top{
     margin-left: 20px;
     margin-top: 15px;
-    display: inline-block;
+    margin-right: 60%;
+    align-items: center;
+    border: 1px solid teal;
 }
 
-
-.intro,.signup{
-    background: hsl(217, 28%, 15%);
+section.intro{
+    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-header{
-    display: flex;
+    border: 1px solid purple;
 }
+
+section.intro p{
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    width: 42%;
+}
+section.intro button.get_started{
+    border-radius: 50px;
+    padding: 10px; 
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-weight: 700;
+    width: 150px;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+section.intro h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    width: 54%;
+    text-align: center;
+}
+.intro-image{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    border: 1px solid cyan;
+}
+
 main{
+    padding: 50px;
+    border: 1px solid navy;
     background: hsl(218, 28%, 13%);
 }
-section{
+main section h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    
+}
+main section{
+    width: 50%;
+}
+
+section article{
     display: flex;
 }
-article.testimonials{
+article.testimonials p{
     background:hsl(219, 30%, 18%);
     border-radius: 50px;
     margin-right: 10px;
