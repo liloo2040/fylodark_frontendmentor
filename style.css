@@ -5,7 +5,6 @@ body{
     max-width: 1440px;
     margin: 0;
     color: hsl(0, 0%, 100%);
-    font-family: 'Open Sans', sans-serif;
 }
 header{
     background: hsl(217, 28%, 15%);
@@ -23,7 +22,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-.navbar .nav{
+header .navbar .nav{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -34,11 +33,12 @@ ul .nav{
     justify-content: flex-end;
     margin-right: 50px;
 }
-.navbar .nav li{
+header .navbar .nav li{
     font-family: 'Raleway', sans-serif;
     justify-content: flex-end;
     list-style-type: none;
     margin: 0 20px;
+    color:hsl(0, 0%, 100%);
 }
 
 .logo-top{
@@ -49,41 +49,41 @@ ul .nav{
     border: 1px solid teal;
 }
 
-section.intro{
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid purple;
-}
 
-section.intro p{
+p{
     font-weight: 400;
     text-align: center;
-    align-items: center;
-    width: 42%;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
 }
-section.intro button.get_started{
+/*section button{
     border-radius: 50px;
     padding: 10px; 
-    color: hsl(0, 0%, 100%);
     border: none;
     font-weight: 700;
-    width: 150px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
     background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orange;
 }
-section.intro h1{
+h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 35px;
-    width: 54%;
+    display: flex;
+    justify-content: center;
+    width: 55%;
     text-align: center;
 }
 .intro-image{
     display: flex;
     width: 50%;
-    height: 50%;
     border: 1px solid cyan;
 }
 
@@ -92,14 +92,7 @@ main{
     border: 1px solid navy;
     background: hsl(218, 28%, 13%);
 }
-main section h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    
-}
-main section{
-    width: 50%;
-}
+
 
 section article{
     display: flex;
