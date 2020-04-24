@@ -144,6 +144,7 @@ section .text{
     justify-content: center;
     align-items: center;
     border: 1px solid darkgreen;
+    margin-top: 50px;
 }
 .text h1, .text p{
     width: 90%;
@@ -152,10 +153,35 @@ section .text{
 .text a{
     color:hsl(176, 68%, 64%);
     text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    width: 100%;
+    display: inline-block;
+}
+.text a::after{
+    content: url('./images/icon-arrow.svg');
+    color:hsl(176, 68%, 64%);
+    text-align: left;
+    text-decoration: underline;
+    vertical-align: middle;
+    display: inline-block;
 }
 .testimonials-section{
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+article.testimonials p{
+    background:hsl(219, 30%, 18%);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+}
+article.testimonials img{
+    display: flex;
+    width: 25%;
+    border-radius: 50px;
 }
 main{
     padding: 50px;
@@ -172,11 +198,7 @@ section{
 section article{
     display: flex;
 }
-article.testimonials p{
-    background:hsl(219, 30%, 18%);
-    border-radius: 50px;
-    margin-right: 10px;
-}
+
 footer.contact{
     background:hsl(216, 53%, 9%);
 }
