@@ -186,9 +186,9 @@ article.testimonials p{
     width: 300px;
 }
 article.testimonials img{
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
     width: 15%;
-    flex-direction: row;
     border-radius: 50px;
     vertical-align: middle;
     margin-top: 10px;
@@ -212,4 +212,5 @@ section article{
 
 footer.contact{
     background:hsl(216, 53%, 9%);
+    display: flex;
 }
