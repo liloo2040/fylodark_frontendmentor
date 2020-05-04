@@ -137,6 +137,7 @@ section .productive{
     border: 1px solid maroon;
     margin-top: 100px;
     padding: 20px;
+    margin-bottom: 100px;
 }
 section .text{
     display: flex;
@@ -164,36 +165,54 @@ section .text{
 .testimonials-section{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: center;
     border: 1px solid yellowgreen;
 }
-.testimonials::before{
-    background-image: url('./images/bg-quotes.png');
+
+.quotes{
     width: 50px;
+    margin-left: 35px;
+    margin-bottom: -110px;
 }
 
-
-article.testimonials p{
+article.testimonials{
     background:hsl(219, 30%, 18%);
     border-radius: 5px;
     margin-right: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
-article.testimonials img{
-    /* display: flex; */
-    /* flex-direction: row; */
-    width: 15%;
-    border-radius: 50px;
-    vertical-align: middle;
+figure{
     margin-top: 10px;
+    margin-left: 1px;
+    display: flex;
+    width: 100%;
+    vertical-align: middle;
 }
-
+figure img{
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    display: table-cell;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+figure h5 span{
+    display: block;
+    font-weight: 400;
+}
+figure h5{
+    margin-top: 20px;
+    font-weight: 700;
+}
 main{
     padding: 50px;
     border: 1px solid navy;
