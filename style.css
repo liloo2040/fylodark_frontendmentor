@@ -189,6 +189,7 @@ article.testimonials{
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 4px 4px 4px hsl(216, 53%, 9%);
 }
 figure{
     margin-top: 10px;
@@ -230,6 +231,7 @@ figure h5{
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+    box-shadow: 4px 4px 4px hsl(216, 53%, 9%);
 }
 .newsletter p{
     font-weight: 400; 
@@ -270,24 +272,41 @@ footer.contact{
     display: flex;
     margin-top: -150px;
     padding-top: 100px;
-    
-}
-footer.contact p{
     font-weight: 400; 
-    font-family: 'Open Sans', sans-serif;
-    width: 600px;
-}
-.logo-bottom{
-    margin-left: 20px;
-    margin-top: 15px;
-    align-items: center;
-    border: 1px solid teal;
-}
-footer.contact-items{
-    display: flex;
     flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
 }
+.logo-bottom{
+    margin-left: 50px;
+    margin-top: 50px;
+    object-fit: scale-down;
+    height: 100%;
+    border: 1px solid teal;
+}
+.contact-content{
+    display: flex;
+    margin-top: 150px;
+    margin-left: -150px;
+    padding-bottom: 100px;
+}
+.description{
+    width: 25%;
+}
+i{
+    margin-right: 20px;
+}
+.contact .contact{
+    margin-left: 20px;
+    justify-content: space-between;
+    width: 180px; 
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+.contact .contact i{
+    margin-right: 20px;
+}
+
 .email{
     border-radius: 50px;
     border: 1px solid hsl(0, 0%, 100%);
