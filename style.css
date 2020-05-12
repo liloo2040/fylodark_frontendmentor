@@ -393,6 +393,20 @@ i{
 }
 
 @media screen and (max-width: 375px){
+    body{
+        margin: 0;
+    }
+    header{
+    background: hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    h1, h2{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    }
     .logo-top{
     margin-left: 10px;
     margin-top: 10px;
@@ -423,7 +437,6 @@ i{
         color:hsl(0, 0%, 100%);
     }
     main{
-    padding: 10px;
     border: 1px solid navy;
     background: hsl(218, 28%, 13%);
     }
@@ -440,34 +453,35 @@ i{
     background-image: url('./images/bg-curvy-mobile.svg');
     background-repeat:  no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: 0px 200px;
     text-align: center;
     padding-bottom: 10px;
-    margin-bottom: -90px;
+    margin-bottom: -80px;
     background-color:hsl(217, 28%, 15%);
 }
 .intro .intro-content h1.title{
-    margin: auto;
-    width: 60%;
+    margin: 5px;
+    font-size: 25px;
+    width: 95%;
     text-align: center;
-    font-size: 40px;
 }
 .intro-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 20px;
 }
 .intro-image{
     padding: 10px;
     padding-bottom: 20px;
-    max-width: 50%;
+    max-width: 80%;
 }
 .intro .intro-content h2{
     font-weight: 400;
     text-align: center;
-    width: 48%;
+    width: 80%;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 .intro .intro-content .get_started{
@@ -482,16 +496,19 @@ i{
     width: 200px;
     background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
-.features{
+main{
+    background: hsl(218, 28%, 13%);
+}
+section{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+.features{
+    background: hsl(218, 28%, 13%);
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-    height: 650px;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 200px;
 }
     section .feature{
     margin-left: -5px;
@@ -510,7 +527,7 @@ i{
     section .productive{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 100%;
     height: auto;
     justify-content: center;
     margin-top: 100px;
