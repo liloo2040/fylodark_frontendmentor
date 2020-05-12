@@ -12,6 +12,8 @@ header{
     background: hsl(217, 28%, 15%);
     display: flex;
     flex-direction: column;
+    
+    width: 100%;
 }
 h1, h2{
     font-weight: 700;
@@ -62,20 +64,59 @@ button{
 }
 .get_started{
     border-radius: 50px;
-    padding: 10px; 
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
     border: none;
     width: 200px;
     background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
-section .intro{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background:hsl(217, 28%, 15%);
+.intro{
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: -90px;
+    background-color:hsl(217, 28%, 15%);
 }
-
+.intro .intro-content h1.title{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+}
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.intro-image{
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 50%;
+}
+.intro .intro-content h2{
+    font-weight: 400;
+    text-align: center;
+    width: 48%;
+    font-family: 'Open Sans', sans-serif;
+}
+.intro .intro-content .get_started{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 200px;
+    border: none;
+    width: 200px;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
 .features{
     display: flex;
     flex-direction: row;
@@ -86,7 +127,6 @@ section .intro{
     margin-right: auto;
     width: 900px;
     height: 650px;
-    margin-top: 100px;
 }
 section .feature{
     align-items: center;
@@ -100,11 +140,10 @@ section .feature{
 .feature p{
     width: 85%;
 }
-.title, .productive-title{
+.productive-title{
     width: 60%;
     text-align: center;
     font-size: 40px;
-    margin-bottom: -10px;
 }
 .feature-title{
     margin-bottom: -5px;
@@ -112,11 +151,7 @@ section .feature{
     font-size: 20px;
 }
 
-.intro-image{
-    padding: 10px;
-    margin: auto;
-    width: 50%;
-}
+/*Productive section */
 section .productive{
     display: flex;
     flex-direction: row;
@@ -157,7 +192,7 @@ section .text{
 
 .quotes{
     width: 50px;
-    margin-left: 35px;
+    margin-left: 85px;
     margin-bottom: -110px;
 }
 
@@ -209,6 +244,8 @@ figure h5{
     background:hsl(217, 28%, 15%);
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 50%;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -217,13 +254,20 @@ figure h5{
     text-align: center;
     box-shadow: 4px 4px 4px hsl(216, 53%, 9%);
 }
+.newsletter h2{
+    text-align: center;
+    font-size: 30px;
+}
 .newsletter p{
     font-weight: 400; 
+    width: 95%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
     font-family: 'Open Sans', sans-serif;
-    width: 600px;
 }
 input[type="email"]::placeholder{
-    width: 300px;
+    width: 400px;
     height: 35px;
     border: none;
     border-radius: 50px;
@@ -232,7 +276,7 @@ input[type="email"]::placeholder{
     font-weight: 400;
 }
 input[type="email"]{
-    width: 300px;
+    width: 400px;
     height: 35px;
     border: none;
     padding-left: 10px;
@@ -383,41 +427,72 @@ i{
     border: 1px solid navy;
     background: hsl(218, 28%, 13%);
     }
-    .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    }
-    .title{
-    width: 90%;
-    font-size: 20px;
+    .get_started{
+    border-radius: 50px;
+    margin-top: 20px;
     padding: 10px;
     text-align: center;
-    margin-bottom: -10px;
-    }
-    .intro p{
-        font-weight: 400;
-        text-align: center;
-        width:100%;
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .intro-image{
-        padding: 10px;
-        margin: auto;
-        width: 100%;
-        height: auto;
-    }
-    .features{
+    border: none;
+    width: 200px;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.intro{
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: -90px;
+    background-color:hsl(217, 28%, 15%);
+}
+.intro .intro-content h1.title{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+}
+.intro-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    }
+    
+}
+.intro-image{
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 50%;
+}
+.intro .intro-content h2{
+    font-weight: 400;
+    text-align: center;
+    width: 48%;
+    font-family: 'Open Sans', sans-serif;
+}
+.intro .intro-content .get_started{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 200px;
+    border: none;
+    width: 200px;
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 650px;
+}
     section .feature{
     margin-left: -5px;
     align-items: center;
