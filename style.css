@@ -15,7 +15,12 @@ header{
     
     width: 100%;
 }
-h1, h2{
+h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+}
+h2{
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     font-family: 'Raleway', sans-serif;
@@ -46,23 +51,19 @@ li{
     max-width: 100%;
     height: auto;
 }
-.feature img{
-    width: 100px;
-}
 
 p{
     font-weight: 400;
     text-align: center;
-    width: 40%;
     font-family: 'Open Sans', sans-serif;
+}
+main {
+    background: hsl(218, 28%, 13%);
 }
 button{
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     font-family: 'Raleway', sans-serif;
-    
-}
-.get_started{
     border-radius: 50px;
     margin-top: 20px;
     padding: 10px;
@@ -72,78 +73,74 @@ button{
     background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
 .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url('./images/bg-curvy-desktop.svg');
     background-repeat:  no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: center bottom;
     text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: -90px;
+    padding-bottom: 190px;
+    /* margin-bottom: 200px; */
     background-color:hsl(217, 28%, 15%);
-}
-.intro .intro-content h1.title{
-    margin: auto;
-    width: 60%;
-    text-align: center;
-    font-size: 40px;
 }
 .intro-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 20px;
 }
-.intro-image{
-    padding: 10px;
-    padding-bottom: 20px;
+.intro-content img{
+    padding-top: 20px;
+    padding-bottom: 150px;
+    margin-bottom: 150px;
     max-width: 50%;
 }
-.intro .intro-content h2{
-    font-weight: 400;
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
     text-align: center;
-    width: 48%;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    margin-top: -300px;
 }
-.intro .intro-content .get_started{
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 200px;
-    border: none;
-    width: 200px;
-    background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+.intro-content p{
+    margin-top: 10px;
+    margin-bottom: 20px ;
+    width: 42%;
+    font-size: 14px;
 }
+
+/*Features*/
 .features{
+    background: hsl(218, 28%, 13%);
+    margin-top: -40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 900px;
-    height: 650px;
 }
-section .feature{
+.feature{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 5px;
-    height: 300px;;
-    width: 430px;
+    padding: 5px;
+    max-width: 440px;
+    margin: auto;
 }
 .feature img{
-    width: 20%;
+    max-width: 20%;
 }
 .feature p{
-    width: 85%;
-}
-.productive-title{
-    width: 60%;
-    text-align: center;
-    font-size: 40px;
+    max-width: 82%;
 }
 .feature-title{
     margin-bottom: -5px;
@@ -152,25 +149,31 @@ section .feature{
 }
 
 /*Productive section */
-section .productive{
+.productive{
     display: flex;
     flex-direction: row;
-    width: 990px;
-    margin: auto;
-    margin-top: 100px;
-    padding: 20px;
-    margin-bottom: 100px;
+    padding: 40px;
+    margin-bottom: 50px;
+    background: hsl(218, 28%, 13%);
+    margin-top: 50px;
+}
+.productive h1.productive-title{
+    max-width: 60%;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 25px;
 }
 section .text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 400px;
 }
 .text h1, .text p{
-    width: 90%;
+    width: 75%;
     text-align: left;
+    margin-left: -120px;
 }
 .fylo{
     color:hsl(176, 68%, 64%);
@@ -186,14 +189,15 @@ section .text{
 .testimonials-section{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
 .quotes{
     width: 50px;
     margin-left: 85px;
-    margin-bottom: -110px;
+    margin-bottom: -65px;
 }
 
 article.testimonials{
@@ -237,15 +241,16 @@ figure h5{
 
 /*Newsletter*/
 .newsletter{
-    margin-top: 160px;
+    margin-top: 100px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    background:hsl(217, 28%, 15%);
+    background-color:hsl(217, 28%, 15%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
+    position: relative;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -257,6 +262,7 @@ figure h5{
 .newsletter h2{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 .newsletter p{
     font-weight: 400; 
@@ -292,14 +298,6 @@ input[type="email"]{
     justify-content: space-between;
     margin-top: 20px;
 }
-main{
-    background: hsl(218, 28%, 13%);
-}
-section{
-    display: flex;
-    flex-direction: column;
-}
-
 
 section article{
     display: flex;
@@ -308,7 +306,7 @@ section article{
 footer.contact{
     background:hsl(216, 53%, 9%);
     display: flex;
-    margin-top: -150px;
+    margin-top: -80px;
     padding-top: 100px;
     font-weight: 400; 
     flex-direction: row;
@@ -318,7 +316,6 @@ footer.contact{
 .logo-bottom{
     margin-left: 50px;
     margin-top: 50px;
-    object-fit: scale-down;
     height: 100%;
 }
 .contact-content{
@@ -411,7 +408,6 @@ i{
     margin-left: 10px;
     margin-top: 10px;
     margin-right:10px;
-    border: 1px solid teal;
     max-width: 100%;
     height: auto;
     flex-shrink: 2;
@@ -424,7 +420,6 @@ i{
     ul{
         display: flex;
         flex-direction: row;
-        border: 1px solid salmon;
         justify-content: space-between;
         margin-right: 5px;
         width: 50%;
@@ -476,11 +471,18 @@ i{
     padding: 10px;
     padding-bottom: 20px;
     max-width: 80%;
+    
 }
-.intro .intro-content h2{
+.intro-image::after{
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 80%;
+    background:hsl(218, 28%, 13%);
+}
+h2{
     font-weight: 400;
     text-align: center;
-    width: 80%;
+    /* width: 80%; */
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
