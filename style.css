@@ -529,6 +529,7 @@ i{
         flex-direction: column;
         padding: 10px;
         margin-bottom: 20px;
+        margin-left: 10px;
         background: hsl(218, 28%, 13%);
         margin-top: 50px;
     }
@@ -541,7 +542,7 @@ i{
         max-width: 98%;
         text-align: left;
         font-size: 20px;
-        margin-left: 18px;
+        margin-left: 10px;
     }
     section .text{
         display: flex;
