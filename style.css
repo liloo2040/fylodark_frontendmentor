@@ -510,7 +510,7 @@
         background: hsl(218, 28%, 13%);
         margin-top: 50px;
     }
-    section.text h2{
+    .text h2{
         margin-left: -200px;
         max-width: 50%;
         font-size: 30px;
@@ -519,7 +519,7 @@
         object-fit: contain;
         padding: 10px;
     }
-    section.text p{
+    .text p{
         width: 75%;
         text-align: left;
         margin-left: -60px;
