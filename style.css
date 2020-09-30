@@ -412,7 +412,7 @@
     }
     main {
         background: hsl(218, 28%, 13%);
-        padding-top: 50px;
+        padding-top: 10px;
     }
     button{
         font-weight: 700;
@@ -426,6 +426,7 @@
         width: 200px;
         background-image: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     }
+    /* Introduction */
     section.intro{
         display: flex;
         flex-direction: column;
@@ -472,32 +473,25 @@
     }
 
     /*Features*/
-    .features{
+    section.features{
         background: hsl(218, 28%, 13%);
-        margin-top: -40px;
+        margin-top: -30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        border: 1px solid purple;
     }
     .feature{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        max-width: 450px;
-        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .feature img{
         max-width: 20%;
     }
     .feature p{
-        max-width: 79.8%;
+        max-width: 79%;
     }
     .feature-title{
         margin-bottom: -5px;
@@ -506,33 +500,29 @@
     }
 
     /*Productive section */
-    .productive{
+    section.productive{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 40px;
-        margin-left: 50px;
+        padding: 50px;
+        align-items: center;
         margin-bottom: 50px;
         background: hsl(218, 28%, 13%);
         margin-top: 50px;
     }
-    .productive .text h1{
-        max-width: 60%;
-        text-align: left;
-        font-size: 40px;
-        margin-left: 25px;
+    section.text h2{
+        margin-left: -200px;
+        max-width: 50%;
+        font-size: 30px;
     }
-    section .text{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        margin-top: 400px;
+    section.productive img{
+        object-fit: contain;
+        padding: 10px;
     }
-    .text p{
+    section.text p{
         width: 75%;
         text-align: left;
-        margin-left: -120px;
+        margin-left: -60px;
     }
     .fylo{
         color:hsl(176, 68%, 64%);
