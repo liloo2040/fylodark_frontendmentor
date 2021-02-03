@@ -39,7 +39,7 @@ body{
         flex-direction: row;
         justify-content: flex-end;
         margin-left: auto;
-        margin-right: 50px;
+        margin-right: 40px;
     }
     nav li{
         font-family: 'Raleway', sans-serif;
@@ -64,7 +64,7 @@ body{
         font-family: 'Raleway', sans-serif;
         border-radius: 50px;
         margin-top: 20px;
-        padding: 10px;
+        padding: 15px;
         text-align: center;
         border: none;
         width: 200px;
@@ -119,19 +119,27 @@ body{
     section.features{
         margin-top: -20px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
         flex-wrap: wrap;
         padding-top: 10px;
         padding-bottom: 100px;
     }
     .feature {
-        padding-bottom: 100px;
-        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        padding: 20px;
+        margin: 10px;
     }
     .feature img{
-        max-width: 20%;
+        /* max-width: 20%; */
+        justify-content: center;
+        object-fit: scale-down;
+        max-width: 100px;
     }
     section.feature p{
         max-width: 30%;
@@ -330,20 +338,20 @@ body{
         margin-top: 0px;
         text-align: left;
         max-width: 250px;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .contact .contact i{
         margin-right: 10px;
     }
     .about p{
         margin-top: 0px;
-        max-width: 150px;
-        margin-left: 50px;
+        max-width: 200px;
+        margin-left: 150px;
         text-align: left;
     }
     .legal p{
         margin-top: 0px;
-        margin-left: 50px;
+        margin-left: 150px;
         text-align: left;
     }
     .email{
